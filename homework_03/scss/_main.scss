@@ -1,0 +1,151 @@
+@mixin inputStyle($inp_border, $inp_w, $inp_h, $inp_padding, $box) {
+    border: $inp_border;
+    width: $inp_w;
+    height: $inp_h;
+    padding: $inp_padding;
+    box-sizing: $box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $body_color;
+}
+
+#content {
+    width: 960px;
+    margin: 0 auto;
+    background-color: $bg_color;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    text-transform: $text_transform;
+}
+
+h1, h2 {
+    color: $h_color;
+    margin: 15px 0 15px 0;
+}
+
+p {
+    margin: 15px 0 15px 0;
+    color: $p_color;
+}
+
+img {
+    border: 2px solid transparent;
+    outline: 2px solid $h_color;
+}
+
+.img-left {
+    float: left;
+    margin: 0 15px 10px 0;
+}
+
+.brief {
+    padding: 15px;
+    margin: 0 15px $marg_tip 0;
+    width: $width_tip;
+    background-color: $bg_tip;
+    float: $float_tip;
+}
+
+.img-right {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+a {
+    color: $link_btn_color;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    caption {
+        text-align: right;
+    }
+    tr {
+        th {
+            padding: 12px 10px 12px 10px;
+            text-transform: uppercase;
+            text-align: left;
+            font-weight: lighter;
+            background-color: $table_color_h_input;
+            border-right: 1px solid #fff;
+        }
+        td {
+            border-bottom: 1px solid $table_color_h_input;
+            padding: 10px;
+            background-color: $table_color_d;
+            color: $p_color;
+        }
+    }
+}
+
+form {
+    .fullName {
+        display: flex;
+        flex-direction: row;
+        label {
+            margin-right: 10px;
+            h3 {
+               color: $form_text_color;
+               margin: 10px 0 10px 0;
+               font-weight: lighter;
+            }
+            input[type="text"] {
+                @include inputStyle(1px solid $table_color_h_input, 460px, 25px, 5px, border-box);
+            }
+        }
+    }
+    h3 {
+        color: $form_text_color; 
+        margin: 10px 0 10px 0;
+        font-weight: lighter;
+    }
+    input[type="email"] {
+        @include inputStyle(1px solid $table_color_h_input, 930px, 25px, 5px, border-box);
+    }
+    input[type="text"] {
+        @include inputStyle(1px solid $table_color_h_input, 930px, 25px, 5px, border-box);
+    }
+    textarea {
+        @include inputStyle(1px solid $table_color_h_input, 930px, 200px, 5px, border-box);
+    }
+    input[type="button"] {
+        @include inputStyle(1px solid $link_btn_color, 240px, 45px, 0, border-box);
+        color: $link_btn_color;
+        background-color: $bg_color;
+        margin-top: 25px;
+        font-size: 20px;
+        font-weight: lighter;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
