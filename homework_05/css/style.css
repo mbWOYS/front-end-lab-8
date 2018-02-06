@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 60%;
+    height: 90px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #464547;
+    font-weight: 700;
+    display: block;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover {
+    color: #39c2d7;
+    transition: 0.2s;
+}
+
+.banner {
+    width: 100%;
+    height: 380px;
+    background: url(../img/banner.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    padding-top: 70px;
+    padding-left: 14%;
+    box-sizing: border-box;
+}
+
+.banner div {
+    width: 500px;
+}
+
+.banner div h2 {
+    width: 100px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.newBoxBlock {
+    width: 875px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.newBox {
+    width: 270px;
+    height: 250px;
+    background-color: #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+}
+
+.newBox:hover {
+    background-color: #39c2d7;
+    transition: 0.2s;
+}
+
+.newBox p,
+.newBox h3 {
+    margin: 10px 0 5px 0;
+}
+
+.newBox img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 55px;
+    background-color: #39c2d7;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 20px;
+}
+
+footer div {
+    width: 800px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+footer div ul {
+    display: flex;
+}
+
+footer div ul li {
+    list-style-type: none;
+}
+
+footer div ul li a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s;
+    font-weight: 500;
+}
+
+footer div ul li a:hover {
+    transition: 0.2s;
+    border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width:900px) {
+    header {
+        height: 125px;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    nav {
+        margin: 0 auto;
+    }
+    .banner {
+        padding-left: 5%;
+    }
+    .banner div {
+        width: 95%;
+    }
+    .banner div h2 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .newBoxBlock {
+        width: 99%;
+    }
+    .newBox {
+        width: 45%;
+        height: 255px;
+        padding: 10px 50px 10px 50px;
+    }
+    footer {
+        height: 95px;
+    }
+    footer div {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 55px;
+        justify-content: space-between;
+        text-align: center;
+    }
+    footer div ul li {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    header {
+        width: 100%;
+        padding: 10px 0 0 0;
+        margin: 0;
+        height: 228px;
+    }
+    header nav {
+        width: 100%;
+    }
+    header nav ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    header nav ul li {
+        width: 100%;
+        height: 40px;
+        background-color: #eee;
+        box-sizing: border-box;
+        padding: 12px;
+        margin-left: 0;
+        border-top: 1px solid #ccc;
+    }
+    
+    .banner {
+        padding: 0;
+        position: relative;
+    }
+    .banner div h2 {
+        width: 90%;
+        text-align: left;
+        padding: 10px;
+        background: #39c2d7;
+        position: absolute;
+        left: 3%;
+        bottom: 5%;
+    }
+    .newBoxBlock {
+        width: 90%;
+    }
+    .newBox {
+        width: 100%;
+        padding: 10px;
+        height: 250px;
+    }
+    .newBox img {
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        left: 15%;
+    }
+    footer {
+        height: 130px;
+        position: relative;
+    }
+    footer div ul {
+        flex-direction: column;
+    }
+    footer div ul li{
+        padding-bottom: 3px;
+    }
+    footer div {
+        width: 300px;
+    }
+    footer div p {
+        position: absolute;
+        bottom: 15%;
+        padding-left: 15px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
